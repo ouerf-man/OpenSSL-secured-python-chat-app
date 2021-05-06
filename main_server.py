@@ -18,9 +18,9 @@ def end_server(server_thread):
 def init_server():
     f = open('serverinfo', 'r')
     temp = f.readline().strip().split()
-    ip = temp[1]
+    ip = temp[0]
     temp = f.readline().strip().split()
-    port = int(temp[1])
+    port = int(temp[0])
     create_server(ip, port)
 
 if __name__ == '__main__':

@@ -5,7 +5,7 @@ Created on Dec 1, 2013
 '''
 
 from tkinter import Text
-from idlelib.WidgetRedirector import WidgetRedirector
+from idlelib.redirector import WidgetRedirector
 
 class ReadOnlyText(Text):
     def __init__(self, *args, **kwargs):
